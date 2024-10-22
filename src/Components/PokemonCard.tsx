@@ -4,10 +4,8 @@ function PokemonCard () {
    
     
     return <><figure>
-       {pokemon.imgSrc ? (<img src = {pokemon.imgSrc} alt ={pokemon.image}/>) : (<p>???</p>) } 
+       {pokemon.imgSrc ? (<img src = {pokemon.imgSrc} alt ={pokemon.name}/>) : (<p>???</p>) } 
     </figure><figcaption>{ pokemon.name  ? (<p>{pokemon.name}</p>) : (<p>???</p> )}</figcaption></>
-    
-    
     }
     const pokemonList = [
         {
