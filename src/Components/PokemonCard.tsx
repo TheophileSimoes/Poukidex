@@ -1,14 +1,17 @@
 interface PokemonProps {
   props:{
-    imgSrc?: string;
+    imgSrc: string;
     name: string;
   };
 }
 
 
-
 function PokemonCard ({props} : PokemonProps) {
- 
+
+
+
+   
+    
     return (
     <>
     <figure>
@@ -17,9 +20,7 @@ function PokemonCard ({props} : PokemonProps) {
     <figcaption>
       {props.name  ? (<p>{props.name}</p>) : (<p>???</p> )}
     </figcaption></>)
-    
-  }
-
+    }
 
  
     export default PokemonCard;
