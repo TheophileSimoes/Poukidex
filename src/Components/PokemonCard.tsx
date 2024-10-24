@@ -1,9 +1,10 @@
 interface PokemonProps {
   props:{
-    imgSrc: string;
+    imgSrc?: string;
     name: string;
   };
 }
+
 
 
 function PokemonCard ({props} : PokemonProps) {

@@ -10,7 +10,7 @@ function App () {
   return (
 <>
   <div>
-  <PokemonCard props ={pokemonList[0]} />
+  <PokemonCard props ={pokemonList[1]} />
   </div>
 </>
 
