@@ -1,12 +1,12 @@
-interface PokemonProps {
+interface Pokemon {
   props:{
-    imgSrc: string;
+    imgSrc?: string;
     name: string;
   };
 }
 
 
-function PokemonCard ({props} : PokemonProps) {
+function PokemonCard ({props} : Pokemon) {
 
 
 
