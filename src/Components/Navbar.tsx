@@ -1,6 +1,7 @@
 interface Pokemon {
     imgSrc?: string;
     name: string;
+    id : number;
 }
 
 interface NavBarProps {
@@ -15,20 +16,17 @@ function Navbar ({pokemonIndex, setPokemonIndex,pokemonList}: NavBarProps){
 
 
 return (
-
     <nav>
- 
-{pokemonIndex < pokemonList.length - 1 && (
-    <button type="button" onClick={() => setPokemonIndex(pokemonIndex + 1)}>Suivant</button>
-)}
-
-{pokemonIndex > 0 && (
-    <button type ="button" onClick={() => setPokemonIndex(pokemonIndex - 1)}>Précédent</button>
-) }
-
+ {pokemonList.map((Pokemon)=> (
+<button 
+type="button" 
+onClick={() =>setPokemonIndex(P okemon.id)}>
+{Pokemon.name}
+</button>
+ ))}
   </nav>
-)
-}
+);
+};
 
 
 export default Navbar;
