@@ -20,7 +20,7 @@ return (
  {pokemonList.map((Pokemon)=> (
 <button 
 type="button" 
-onClick={() =>setPokemonIndex(P okemon.id)}>
+onClick={() =>setPokemonIndex(Pokemon.id)}>
 {Pokemon.name}
 </button>
  ))}
